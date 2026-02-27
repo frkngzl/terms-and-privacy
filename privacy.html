@@ -5,58 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Alters.ai</title>
     <style>
-        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; padding: 30px; max-width: 800px; margin: 0 auto; color: #1d1d1f; background-color: #f5f5f7; }
-        .container { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
-        h2 { font-size: 22px; margin-top: 30px; color: #0071e3; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        /* Modern ve Temiz Tasarım Ayarları */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            padding: 20px; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            color: #1d1d1f; 
+            background-color: #f5f5f7; 
+        }
+        .card { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 18px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+        }
+        h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 5px; }
+        h2 { font-size: 22px; font-weight: 600; margin-top: 35px; color: #0071e3; border-bottom: 1px solid #f0f0f2; padding-bottom: 10px; }
         p { margin-bottom: 15px; }
         ul { margin-bottom: 20px; padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .date { color: #86868b; font-size: 14px; margin-bottom: 30px; }
-        .contact { background: #f0f0f2; padding: 15px; border-radius: 10px; font-weight: bold; }
+        li { margin-bottom: 10px; }
+        strong { color: #000; }
+        .update-date { color: #86868b; font-size: 14px; margin-bottom: 30px; }
+        .contact-box { 
+            background: #fbfbfd; 
+            border: 1px solid #d2d2d7; 
+            padding: 15px; 
+            border-radius: 12px; 
+            display: inline-block;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .card { padding: 20px; }
+            h1 { font-size: 28px; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="date">Last Updated: February 2026</p>
 
-        <p>Alters.ai ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application in compliance with the GDPR and KVKK.</p>
+    <div class="card">
+        <h1>Privacy Policy</h1>
+        <p class="update-date">Last Updated: February 2026</p>
+
+        <p>Alters.ai ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application. By using the App, you agree to the terms of this policy in compliance with the <strong>General Data Protection Regulation (GDPR)</strong> and the <strong>Law on Protection of Personal Data (KVKK)</strong>.</p>
 
         <h2>1. Data Controller</h2>
         <p>The data controller for Alters.ai is the <strong>Alters.ai Team</strong>. For any privacy-related inquiries, please contact us at:</p>
-        <p class="contact">thatsmyjobemailf@gmail.com</p>
+        <div class="contact-box">
+            <strong>Support Email:</strong> thatsmyemailf@gmail.com
+        </div>
 
         <h2>2. Information We Collect</h2>
-        <p>We prioritize data minimization. We collect the following:</p>
+        <p>We prioritize data minimization and do not collect personal information unless necessary for the App's functionality.</p>
         <ul>
-            <li><strong>Authentication:</strong> Anonymous Login (Device ID) and Sign in with Apple.</li>
-            <li><strong>Usage Analytics:</strong> Anonymous interactions via Firebase Analytics.</li>
-            <li><strong>Subscriptions:</strong> Transaction IDs via Adapty and Apple (No credit card data).</li>
-            <li><strong>Advertising:</strong> Advertising ID (IDFA) via Google AdMob (subject to consent).</li>
+            <li><strong>Authentication Data:</strong> We offer Anonymous Login (using your Device ID) and Sign in with Apple. If you use Apple Auth, we receive a unique identifier and, depending on your choice, your email address.</li>
+            <li><strong>Usage Analytics:</strong> We use <strong>Firebase Analytics</strong> to collect anonymous data about how users interact with the App (e.g., screen views, button clicks). This data is not linked to your identity.</li>
+            <li><strong>Subscription & Payments:</strong> We use <strong>Adapty</strong> to manage subscriptions. All financial transactions are processed by Apple. We do not have access to your credit card details.</li>
+            <li><strong>Advertising:</strong> We use <strong>Google AdMob</strong>. AdMob may collect your Advertising ID (IDFA/AAID) to serve personalized ads, subject to your consent (ATT on iOS).</li>
         </ul>
 
         <h2>3. Zero-Persistence Messaging Policy</h2>
+        <p>Alters.ai provides an AI-driven mentorship experience.</p>
         <ul>
-            <li><strong>No Storage:</strong> Your messages are processed in real-time by Google Gemini AI.</li>
-            <li><strong>Ephemeral Chats:</strong> We do not store, log, or save your chat history. Once you exit the chat, data is permanently deleted.</li>
-            <li><strong>No Training:</strong> Your conversations are not used to train AI models.</li>
+            <li><strong>No Storage:</strong> Your messages are processed in real-time by <strong>Google Gemini AI</strong>.</li>
+            <li><strong>Ephemeral Chats:</strong> We do not store, log, or save your chat history on our servers. Once you leave the chat session, the data is permanently deleted from our temporary processing memory.</li>
+            <li><strong>No Training:</strong> Your conversations are not used to train our AI models or for advertising purposes.</li>
         </ul>
 
         <h2>4. Age Restriction</h2>
-        <p>Alters.ai is strictly for users who are <strong>18 years of age or older</strong>.</p>
+        <p>Alters.ai is intended strictly for users who are <strong>18 years of age or older</strong>. We do not knowingly collect data from individuals under 18.</p>
 
         <h2>5. Third-Party Services</h2>
-        <p>We use trusted providers to run the App:</p>
+        <p>Your data may be processed by the following third-party providers:</p>
         <ul>
-            <li><strong>Supabase:</strong> Authentication services.</li>
-            <li><strong>Google Gemini:</strong> AI processing.</li>
-            <li><strong>Google AdMob & Firebase:</strong> Ads and analytics.</li>
-            <li><strong>Apple & Adapty:</strong> Subscription management.</li>
+            <li><strong>Supabase:</strong> For authentication services.</li>
+            <li><strong>Google Gemini (AI):</strong> To generate responses.</li>
+            <li><strong>Google AdMob & Firebase:</strong> For ads and analytics.</li>
+            <li><strong>Adapty & Apple:</strong> For subscription management.</li>
         </ul>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right to access, correct, or request the deletion of your data. You can delete your account and all associated data directly within the App settings.</p>
+        <h2>6. Your Rights (GDPR/KVKK)</h2>
+        <p>Depending on your location, you have the right to access, correct, or delete your personal data. Since we do not store chat logs, most "data requests" will involve your account ID or subscription status.</p>
+
+        <p style="margin-top: 50px; font-size: 12px; color: #86868b; text-align: center;">
+            © 2026 Alters.ai Team. All rights reserved.
+        </p>
     </div>
+
 </body>
 </html>
