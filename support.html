@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Alters.ai</title>
     <style>
-        /* Önceki sayfalarla uyumlu tasarım */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.7; padding: 20px; max-width: 850px; margin: 0 auto; color: #1d1d1f; background-color: #f5f5f7; 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7; padding: 20px; max-width: 850px; margin: 0 auto; color: #1d1d1f; background-color: #f5f5f7;
         }
         .card { background: white; padding: 40px; border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         h1 { font-size: 34px; font-weight: 700; margin-bottom: 10px; }
-        h2 { font-size: 22px; font-weight: 600; margin-top: 30px; color: #0071e3; }
+        h2 { font-size: 22px; font-weight: 600; margin-top: 30px; color: #0071e3; border-bottom: 1px solid #f0f0f2; padding-bottom: 10px; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        strong { color: #000; }
         .contact-btn {
             display: inline-block; background: #0071e3; color: white; padding: 12px 25px;
             text-decoration: none; border-radius: 10px; font-weight: 600; margin-top: 10px;
         }
+        .contact-box {
+            background: #fbfbfd;
+            border: 1px solid #d2d2d7;
+            padding: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
         .faq-item { margin-bottom: 20px; border-bottom: 1px solid #f0f0f2; padding-bottom: 15px; }
         .faq-question { font-weight: 700; color: #000; display: block; }
         .faq-answer { color: #424245; }
+        @media (max-width: 600px) {
+            .card { padding: 20px; }
+            h1 { font-size: 28px; }
+        }
     </style>
 </head>
 <body>
@@ -30,14 +46,17 @@
 
         <h2>Contact Us</h2>
         <p>For any bugs, feature requests, or account inquiries, please reach out to our team:</p>
+        <div class="contact-box">
+            <strong>Support Email:</strong> <a href="mailto:thatsmyjobemailf@gmail.com" style="color: #0071e3;">thatsmyjobemailf@gmail.com</a>
+        </div>
         <form action="https://formspree.io/f/mdalraeg" method="POST" style="margin-top:20px;">
-    <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:1px solid #ddd;">
-    <textarea name="message" placeholder="How can we help?" required style="width:100%; padding:10px; height:100px; border-radius:8px; border:1px solid #ddd;"></textarea>
-    <button type="submit" class="contact-btn" style="border:none; cursor:pointer; width:100%;">Send Message</button>
-</form>
+            <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:10px; margin-bottom:10px; border-radius:8px; border:1px solid #ddd; box-sizing: border-box;">
+            <textarea name="message" placeholder="How can we help?" required style="width:100%; padding:10px; height:100px; border-radius:8px; border:1px solid #ddd; box-sizing: border-box;"></textarea>
+            <button type="submit" class="contact-btn" style="border:none; cursor:pointer; width:100%;">Send Message</button>
+        </form>
 
         <h2>Frequently Asked Questions</h2>
-        
+
         <div class="faq-item">
             <span class="faq-question">How does the AI work?</span>
             <p class="faq-answer">Alters.ai uses Google Gemini AI technology to provide real-time mentorship. Your messages are processed instantly and are not stored permanently.</p>
@@ -50,14 +69,30 @@
 
         <div class="faq-item">
             <span class="faq-question">How can I cancel my subscription?</span>
-            <p class="faq-answer">All subscriptions are managed by Apple. You can cancel via: iPhone Settings > Apple ID > Subscriptions.</p>
+            <p class="faq-answer">All subscriptions are managed by Apple. You can cancel via: iPhone Settings > [Your Name] > Subscriptions > Alters AI > Cancel Subscription. Cancellation takes effect at the end of your current billing period.</p>
+        </div>
+
+        <div class="faq-item">
+            <span class="faq-question">How do I request a refund?</span>
+            <p class="faq-answer">All refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" style="color: #0071e3;">reportaproblem.apple.com</a> to submit a refund request.</p>
         </div>
 
         <h2>Account & Data Deletion</h2>
-        <p>To delete your account and all associated data, go to the <strong>Settings</strong> menu within the Alters.ai app and select <strong>"Delete Account"</strong>. If you cannot access the app, please email us with your User ID.</p>
+        <p>To delete your account and all associated data:</p>
+        <ul>
+            <li><strong>In the App:</strong> Go to <strong>Settings > Delete Account</strong>. This will permanently remove your account and all associated data.</li>
+            <li><strong>Via Email:</strong> If you cannot access the app, send a request to <strong><a href="mailto:thatsmyjobemailf@gmail.com" style="color: #0071e3;">thatsmyjobemailf@gmail.com</a></strong> with your User ID. We will process your request within 30 days.</li>
+        </ul>
+        <p><strong>Important:</strong> Deleting your account does not cancel active subscriptions. Please cancel your subscription via iPhone Settings before deleting your account.</p>
+
+        <h2>Legal</h2>
+        <ul>
+            <li><a href="privacy.html" style="color: #0071e3;">Privacy Policy</a></li>
+            <li><a href="terms.html" style="color: #0071e3;">Terms of Use</a></li>
+        </ul>
 
         <p style="margin-top: 50px; font-size: 12px; color: #86868b; text-align: center;">
-            © 2026 Alters.ai Team. We typically respond within 24-48 hours.
+            &copy; 2026 Alters.ai Team. We typically respond within 24-48 hours.
         </p>
     </div>
 
